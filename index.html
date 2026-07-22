@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Кассын Дэвтэр — дэлгүүрийн бүртгэлийн апп</title>
+<meta name="description" content="Дэлгүүрийн бараа, борлуулалт, авлагаа утаснаасаа удирдах апп. Дата тань өөрийн Google Drive-д хадгалагдана.">
+<style>
+  :root { --ink:#0f172a; --muted:#475569; --line:#e2e8f0; --brand:#0b2a5b; --accent:#2563eb; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0 18px 64px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    color: var(--ink); line-height: 1.7; background: #fff;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header { padding: 56px 0 36px; text-align: center; }
+  h1 { font-size: 34px; color: var(--brand); margin: 0 0 8px; }
+  .tag { color: var(--muted); font-size: 17px; }
+  h2 { font-size: 21px; color: var(--brand); margin: 40px 0 12px; }
+  ul { padding-left: 22px; }
+  li { margin: 8px 0; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 20px 0; }
+  .card { background: #f8fafc; border: 1px solid var(--line); border-radius: 14px; padding: 16px; }
+  .card b { display: block; margin-bottom: 4px; color: var(--brand); }
+  .card span { font-size: 14.5px; color: var(--muted); }
+  .cta { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 14px; padding: 18px; margin: 28px 0; }
+  .price { display: flex; justify-content: space-between; padding: 7px 0; border-bottom: 1px solid var(--line); }
+  .price:last-child { border: 0; }
+  footer { margin-top: 52px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Кассын Дэвтэр</h1>
+  <div class="tag">Дэлгүүрийн бараа, борлуулалт, авлагаа утаснаасаа удирдах апп</div>
+</header>
+
+<h2>Юу хийж чадах вэ?</h2>
+<div class="grid">
+  <div class="card"><b>🛒 Худалдаа</b><span>Бараагаа бар кодоор уншуулж хурдан зарна. Хариултыг автоматаар тооцно.</span></div>
+  <div class="card"><b>📒 Авлага</b><span>Хэн, хэзээ, хэдийг авсныг бүртгэж, төлбөрийн сануулга илгээнэ.</span></div>
+  <div class="card"><b>📦 Тооллого</b><span>Үлдэгдэл, орлого, зарагдалтын түүхээ хэдийд ч тулгана.</span></div>
+  <div class="card"><b>💼 Санхүү</b><span>Түрээс, татвар, зардлаа оруулж бодит ашгаа хармаар.</span></div>
+  <div class="card"><b>👥 Худалдагч</b><span>Ажилтандаа хэрэгтэй эрхийг нь л өгнө. Авсан үнэ нууц хэвээр.</span></div>
+  <div class="card"><b>📶 Офлайн</b><span>Интернэт тасарсан ч ажиллана. Холбогдмогц өөрөө илгээнэ.</span></div>
+</div>
+
+<h2>Таны дата хаана байдаг вэ?</h2>
+<p>
+  <b>Таны өөрийн Google Drive дотор.</b> Бидэнд сервер байхгүй — таны борлуулалт,
+  авлага, үйлчлүүлэгчийн мэдээллийг бид хардаггүй. Утсаа сольсон ч Google хаягаараа
+  нэвтрэхэд бүх зүйл байрандаа байна.
+</p>
+
+<h2>Үнэ</h2>
+<div class="cta">
+  <div class="price"><span>Дэлгүүрийн эзний эрх · 1 жил</span><b>150'000₮</b></div>
+  <div class="price"><span>Худалдагчийн эрх · 1 жил</span><b>120'000₮</b></div>
+  <p style="margin:14px 0 0; font-size:14.5px; color:#475569;">
+    🎁 Найзаа урьвал та ч, найз тань ч <b>1 сарын нэмэлт хугацаа</b> авна.
+  </p>
+</div>
+
+<h2>Холбоо барих</h2>
+<p>
+  <b>Утас:</b> <a href="tel:88003530">88003530</a><br>
+  <b>Имэйл:</b> <a href="mailto:mulu1105@gmail.com">mulu1105@gmail.com</a>
+</p>
+
+<footer>
+  <a href="privacy.html">Нууцлалын бодлого</a> ·
+  <a href="terms.html">Үйлчилгээний нөхцөл</a>
+</footer>
+
+</div>
+</body>
+</html>

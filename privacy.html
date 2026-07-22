@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Нууцлалын бодлого — Кассын Дэвтэр</title>
+<style>
+  :root { --ink:#0f172a; --muted:#475569; --line:#e2e8f0; --brand:#0b2a5b; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 24px 18px 64px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    color: var(--ink); line-height: 1.7; background: #fff;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  h1 { font-size: 26px; color: var(--brand); margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 32px 0 10px; color: var(--brand); }
+  h3 { font-size: 16px; margin: 20px 0 6px; }
+  .sub { color: var(--muted); font-size: 14px; margin-bottom: 28px; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  .box { background: #f8fafc; border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; margin: 16px 0; }
+  .key { background: #ecfdf5; border-color: #a7f3d0; }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 14.5px; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 44px 0 28px; }
+  .en { color: var(--muted); }
+  .en h1, .en h2 { color: #334155; }
+  a { color: #1d4ed8; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Нууцлалын бодлого</h1>
+<div class="sub">Кассын Дэвтэр (Kassiin Devter) · Сүүлд шинэчилсэн: 2026 оны 7-р сарын 23</div>
+
+<div class="box key">
+  <b>Хамгийн чухал зүйл:</b> Таны дэлгүүрийн бүх дата — бараа, борлуулалт, авлага,
+  үйлчлүүлэгчийн мэдээлэл — <b>таны өөрийн Google Drive дотор</b> хадгалагдана.
+  Бид тэдгээрийг хардаггүй, хуулбарладаггүй, өөр хаана ч хадгалдаггүй.
+</div>
+
+<h2>1. Бид ямар мэдээлэл цуглуулдаг вэ?</h2>
+
+<h3>1.1. Google хаягийн мэдээлэл</h3>
+<p>Та Google хаягаараа нэвтрэхэд апп дараах зүйлийг авна:</p>
+<ul>
+  <li><b>Имэйл хаяг</b> — таныг таних, эрхийг тань шалгах</li>
+  <li><b>Нэр, профайл зураг</b> — апп дотор харуулах</li>
+</ul>
+
+<h3>1.2. Дэлгүүрийн дата</h3>
+<p>
+  Бараа, үнэ, борлуулалт, авлага, төлбөр, зардал, тэмдэглэл, мөн та өөрөө оруулбал
+  худалдан авагчийн нэр, утасны дугаар. Эдгээр нь <b>зөвхөн таны Google Drive дэх
+  хүснэгтэд</b> бичигдэнэ.
+</p>
+
+<h3>1.3. Лицензийн мэдээлэл</h3>
+<p>
+  Апп нь төлбөртэй тул хөгжүүлэгч дараах мэдээллийг тусад нь бүртгэдэг:
+  <b>нэр, имэйл хаяг, утасны дугаар, эрхийн хугацаа</b>. Энэ нь зөвхөн эрхийг тань
+  шалгах, сунгах зорилготой.
+</p>
+
+<h2>2. Google-ийн эрхийг хэрхэн ашигладаг вэ?</h2>
+<table>
+  <tr><th>Эрх</th><th>Юунд ашиглана</th></tr>
+  <tr>
+    <td><code>drive.file</code></td>
+    <td>
+      Таны Drive-д дэлгүүрийн хүснэгт үүсгэж, түүн рүү бичих.
+      ⚠️ Энэ эрх нь <b>зөвхөн энэ аппын үүсгэсэн файлд</b> хандана —
+      таны бусад бичиг, зураг, файлыг <b>харах боломжгүй</b>.
+    </td>
+  </tr>
+  <tr><td><code>email</code>, <code>profile</code>, <code>openid</code></td>
+      <td>Нэвтрэх, таны нэр, имэйлийг харуулах.</td></tr>
+</table>
+<p>
+  Бид Google-ээс авсан мэдээллийг зөвхөн дээрх зорилгоор ашиглах ба
+  <b>Google API Services User Data Policy</b>-г (<a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Limited Use</a>
+  шаардлагыг оруулаад) бүрэн дагана.
+</p>
+
+<h2>3. Утасны эрхүүд</h2>
+<table>
+  <tr><th>Эрх</th><th>Юунд</th></tr>
+  <tr><td>Камер</td><td>Барааны зураг авах, бар код уншуулах. Зураг нь таны Drive-д хадгалагдана.</td></tr>
+  <tr><td>Мессеж илгээх<br><span class="sub">(зөвхөн шууд суулгасан хувилбар)</span></td>
+      <td>Зээлдэгчид төлбөрийн сануулга илгээх. Мессеж нь <b>таны утаснаас шууд</b> явна — бидний сервер дамжуулахгүй.</td></tr>
+  <tr><td>Интернэт</td><td>Google Drive-тай холбогдох.</td></tr>
+</table>
+<p>Play Store-оос суулгасан хувилбар нь <b>мессеж илгээх эрх огт авдаггүй</b>.</p>
+
+<h2>4. Бид юу ХИЙДЭГГҮЙ вэ?</h2>
+<ul>
+  <li>Таны датаг <b>зардаггүй</b>, түрээслүүлдэггүй, зар сурталчилгаанд ашигладаггүй</li>
+  <li>Зар сурталчилгаа <b>харуулдаггүй</b></li>
+  <li>Гуравдагч талын <b>хяналт, аналитик</b> суулгаагүй</li>
+  <li>Таны дэлгүүрийн датаг өөрийн сервер рүү <b>хуулдаггүй</b> — бидэнд сервер ч байхгүй</li>
+</ul>
+
+<h2>5. Дата хэр удаан хадгалагдах вэ?</h2>
+<ul>
+  <li><b>Дэлгүүрийн дата:</b> та өөрөө устгах хүртэл таны Drive-д байна. Апп устгасан ч дата тань үлдэнэ.</li>
+  <li><b>Лицензийн бүртгэл:</b> эрх дуусаад устгах хүсэлт гаргах хүртэл.</li>
+</ul>
+
+<h2>6. Датагаа хэрхэн устгах вэ?</h2>
+<ul>
+  <li><b>Дэлгүүрийн дата:</b> Google Drive-даа орж <b>«Кассын Дэвтэр (дата)»</b> нэртэй
+      хүснэгтийг устгана. Ингэснээр бүх мэдээлэл бүрмөсөн устана.</li>
+  <li><b>Эрхийн хандалт:</b> Google хаягийн тохиргоо →
+      <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Гуравдагч талын апп</a>
+      → энэ аппын эрхийг цуцална.</li>
+  <li><b>Лицензийн бүртгэл:</b> доорх дугаар руу залгаж устгуулна.</li>
+</ul>
+
+<h2>7. Хүүхдийн хамгаалал</h2>
+<p>Энэ апп нь бизнесийн зориулалттай ба 13-аас доош насны хүүхдэд зориулаагүй.</p>
+
+<h2>8. Өөрчлөлт</h2>
+<p>
+  Энэ бодлого өөрчлөгдвөл дээрх «Сүүлд шинэчилсэн» огноо шинэчлэгдэнэ.
+  Чухал өөрчлөлт гарвал аппаар дамжуулан мэдэгдэнэ.
+</p>
+
+<h2>9. Холбоо барих</h2>
+<div class="box">
+  <b>Утас:</b> 88003530<br>
+  <b>Имэйл:</b> mulu1105@gmail.com
+</div>
+
+<hr>
+
+<div class="en">
+<h1>Privacy Policy (English)</h1>
+<div class="sub">Kassiin Devter (Кассын Дэвтэр) · Last updated: 23 July 2026</div>
+
+<p>
+  <b>Key point:</b> All of your shop data — products, sales, debts and customer details —
+  is stored <b>inside your own Google Drive</b>. We do not read, copy or store it anywhere else.
+  We operate no servers that hold your business data.
+</p>
+
+<h2>Data we collect</h2>
+<ul>
+  <li><b>Google account:</b> email address, name and profile picture, used to sign you in
+      and to verify your licence.</li>
+  <li><b>Shop data:</b> products, prices, sales, debts, payments, expenses and notes —
+      written only to a spreadsheet in <b>your</b> Google Drive.</li>
+  <li><b>Licence record:</b> name, email, phone number and licence expiry, kept by the
+      developer solely to verify and renew your paid access.</li>
+</ul>
+
+<h2>Google API scopes</h2>
+<ul>
+  <li><code>drive.file</code> — create and edit <b>only the files this app itself creates</b>.
+      The app cannot see any of your other Drive files.</li>
+  <li><code>email</code>, <code>profile</code>, <code>openid</code> — sign-in and display of your name.</li>
+</ul>
+<p>
+  Our use of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>,
+  including the Limited Use requirements.
+</p>
+
+<h2>Device permissions</h2>
+<ul>
+  <li><b>Camera</b> — product photos and barcode scanning.</li>
+  <li><b>SMS</b> (direct-install edition only) — payment reminders sent <b>from your own phone</b>;
+      no server is involved. The Play Store edition requests no SMS permission.</li>
+  <li><b>Internet</b> — to reach Google Drive.</li>
+</ul>
+
+<h2>What we never do</h2>
+<p>We never sell, rent or advertise against your data. The app contains no ads and no
+   third-party analytics or tracking.</p>
+
+<h2>Data deletion</h2>
+<p>
+  Delete the spreadsheet named <i>«Кассын Дэвтэр (дата)»</i> from your Google Drive to erase
+  all shop data permanently. Revoke the app's access at
+  <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.
+  To remove your licence record, contact us.
+</p>
+
+<h2>Contact</h2>
+<p>Phone: 88003530 · Email: mulu1105@gmail.com</p>
+</div>
+
+</div>
+</body>
+</html>
